@@ -5,8 +5,6 @@
    
 }
 
-
-
 .container .buscar .text-buscar{
     margin: 15px 10px 0;
     min-width: 200px;
@@ -23,7 +21,6 @@
     width: 50px;
 }
 
-
 .container .iconos .icono{
     font-size: 28px;
 }
@@ -39,7 +36,6 @@
     }
 }
 
-
 @media screen and (max-width: 525px){
    .klk{
     width: 100vw;
@@ -47,4 +43,6 @@
    }
 }
 
-
+#logo:hover {
+    cursor: pointer;
+}
