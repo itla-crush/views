@@ -3,10 +3,17 @@
     justify-content: space-between;
    /* background-size: 100vw; */
 }
-
+.klk{
+    min-width: 540px;
+    min-height: 65px;
+   background: #fff; 
+    border-bottom: 2px solid #ccc;
+}
 .container .buscar .text-buscar{
     margin: 15px 10px 0;
     min-width: 200px;
+    text-align: center;
+    
 }
 
 .container .lg,
@@ -17,7 +24,9 @@
 }
 
 .container .lg .logo{
-    width: 50px;
+    width: 38px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .container .iconos .icono{
@@ -27,6 +36,12 @@
 .container .iconos .icono:hover{
     color: #f7014c;
 }
+#logo:hover {
+    cursor: pointer;
+}
+
+
+
 
 @media screen and (max-width: 780px){
     header .container .iconos .navbar-nav{
@@ -35,13 +50,31 @@
     }
 }
 
-@media screen and (max-width: 525px){
-   .klk{
-    width: 100vw;
-    background: #000;
-   }
+@media screen and (max-width: 600px){
+    .container {
+      height: 80px;
+     padding-top: 10px;
+       /* background-size: 100vw; */
+    }
+    .container .buscar .text-buscar{
+        margin: 15px 10px 0;
+        min-width: 200px;
+        height: 40px;
+    }
+    .container .lg,
+    .container .buscar,
+    .container .iconos{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    
+   
 }
 
-#logo:hover {
-    cursor: pointer;
-}
+/*@media screen and (max-width: 430px){
+    .container .iconos .icono{
+        font-size: 36px;
+    }
+}*/
+
+
