@@ -3,16 +3,16 @@
     width: 100vw;
     padding-left: 0;
     padding-right: 0;
-     margin-right: 0;
-     margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 
-.container .sesion{
+.container .sesion {
     margin-top: 20px;
 }
 
-.container .banner{
+.container .banner {
     width: 50%;
     background: url('../../img/women.jpg');
     background-attachment: fixed;
@@ -21,52 +21,60 @@
     
 }
 
-.container .registro{
+.container .registro {
     height: 100vh;
     width: 50%;
     background: rgb(85, 160, 160);
 }
-.container .registro .sesion{
+.container .registro .sesion {
     padding-bottom: 45px;
     padding-top: 45px;
 }
 
 
-.container .registro .contenedor-uno{
+.container .registro .contenedor-uno {
     width: 70%;
     margin: 0 auto;
     padding: 20px;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
+    background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 25px;
 }
 
-.container .registro .contenedor-dos{
+.container .registro .contenedor-dos {
     padding: 10px;
     background: #fff;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
-    
 }
 
-.container .registro .contenedor-dos p{
+.container .registro .contenedor-dos p {
     text-align: center;
     font-size: 16px;
 }
 
-.container .registro .sesion .contenedor-uno h1{
+.container .registro .sesion .contenedor-uno h1 {
     margin-bottom: 20px;
     text-align: center;
     font-family: "Segoe UI";
-
 }
 
 .container .registro .sesion .contenedor-uno .formulario input[type="email"],
-.container .registro .sesion .contenedor-uno .formulario input[type="password"]{
+.container .registro .sesion .contenedor-uno .formulario input[type="password"] {
    width: 60%;
    margin: 0 auto;
    margin-bottom: 8px;
 }
-.container .registro .sesion .contenedor-uno .formulario input[type="submit"]{
+.container .registro .sesion .contenedor-uno .formulario input[type="submit"] {
     width: 60%;
     margin: 0 auto;
+}
+
+#btn-huesped {
+    width: 60%;
+    margin-top: 10px;
+    border: solid 2px rgba(39, 26, 219, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(39, 26, 219), 0.5;
 }
