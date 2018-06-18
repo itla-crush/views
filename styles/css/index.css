@@ -6,8 +6,9 @@
 .klk{
     min-width: 540px;
     min-height: 65px;
-   background: #fff; 
+    background: #fff; 
     border-bottom: 2px solid #ccc;
+   
 }
 .container .buscar .text-buscar{
     margin: 15px 10px 0;
