@@ -13,29 +13,30 @@
 }
 
 .container .banner {
-    width: 50%;
-    background: url('../../img/women.jpg');
+    width: 48vw;
+    background: url('../../img/banner.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 48vw 100vh;
     
 }
 
 .container .registro {
     height: 100vh;
-    width: 50%;
+    width: 52vw;
     background: rgb(85, 160, 160);
 }
 .container .registro .sesion {
-    padding-bottom: 45px;
-    padding-top: 45px;
+    padding-bottom: 65px;
+    padding-top: 65px;
 }
 
 
 .container .registro .contenedor-uno {
     width: 70%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 35px;
+    padding-bottom: 65px;
     /* background: #f2f2f2; */
     background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 25px;
@@ -44,13 +45,14 @@
 .container .registro .contenedor-dos {
     padding: 10px;
     background: #fff;
-    width: 55%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .container .registro .contenedor-dos p {
     text-align: center;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 .container .registro .sesion .contenedor-uno h1 {
