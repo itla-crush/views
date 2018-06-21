@@ -1,37 +1,64 @@
-.contenedor-padre{
-    background: url(../../img/candado3.jpg);
+body {
+    background-image: url(../../img/candado3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100vw 100vh; 
+}
+
+.contenedor-padre {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    /* width: 100vw;
-    background-size: 100vw 100vh; */
+    /*width: 100vw;*/
 }
 
 .container-fluid .inicio {
     border: 1px solid #ccc;
     border-radius: 2px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     margin-top: 160px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.container-fluid .inicio .titulo h2{
+.container-fluid .inicio .titulo h1 {
     text-align: center;
     /* color: #262626; */
     color: #ccc;
     font-family: "Courgette";
     font-size: 42px;
+    margin: 0px 0px 20px 0px;
 }
 
-.container-fluid .inicio input[type="submit"]{
+.container-fluid .inicio input[type="submit"] {
     width: 100%;
 }
+
+.container-fluid .inicio button {
+    width: 100%;
+}
+
 .container-fluid .inicio p {
     text-align: center;
+    color: rgb(200, 200, 200);
 }
-.container-fluid .inicio a{
-    text-align: center;
-    margin: 10px;
+
+.container-fluid .inicio a {
+    margin-bottom: 10px;
+    color: rgb(200, 200, 200);
 }
+
+.container-fluid .inicio a p {
+    text-align: left;
+}
+
+
