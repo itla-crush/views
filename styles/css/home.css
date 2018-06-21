@@ -1,82 +1,37 @@
-.container {
-    display: flex;
-    width: 100vw;
-    padding-left: 0;
-    padding-right: 0;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-
-.container .sesion {
-    margin-top: 20px;
-}
-
-.container .banner {
-    width: 48vw;
-    background: url('../../img/banner.jpg');
-    background-attachment: fixed;
+.contenedor-padre{
+    background: url(../../img/candado3.jpg);
     background-repeat: no-repeat;
-    background-size: 48vw 100vh;
-    
-}
-
-.container .registro {
+    background-attachment: fixed;
+    width: 100vw;
     height: 100vh;
-    width: 52vw;
-    background: rgb(85, 160, 160);
-}
-.container .registro .sesion {
-    padding-bottom: 65px;
-    padding-top: 65px;
+    /* width: 100vw;
+    background-size: 100vw 100vh; */
 }
 
-
-.container .registro .contenedor-uno {
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 35px;
-    padding-bottom: 65px;
-    /* background: #f2f2f2; */
-    background-color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 25px;
+.container-fluid .inicio {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 160px;
 }
 
-.container .registro .contenedor-dos {
-    padding: 10px;
-    background: #fff;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.container .registro .contenedor-dos p {
+.container-fluid .inicio .titulo h2{
     text-align: center;
-    font-size: 16px;
-    margin: 0 auto;
+    /* color: #262626; */
+    color: #ccc;
+    font-family: "Courgette";
+    font-size: 42px;
 }
 
-.container .registro .sesion .contenedor-uno h1 {
-    margin-bottom: 20px;
+.container-fluid .inicio input[type="submit"]{
+    width: 100%;
+}
+.container-fluid .inicio p {
     text-align: center;
-    font-family: "Segoe UI";
 }
-
-.container .registro .sesion .contenedor-uno .formulario input[type="email"],
-.container .registro .sesion .contenedor-uno .formulario input[type="password"] {
-   width: 60%;
-   margin: 0 auto;
-   margin-bottom: 8px;
-}
-.container .registro .sesion .contenedor-uno .formulario input[type="submit"] {
-    width: 60%;
-    margin: 0 auto;
-}
-
-#btn-huesped {
-    width: 60%;
-    margin-top: 10px;
-    border: solid 2px rgba(39, 26, 219, 0.5);
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(39, 26, 219), 0.5;
+.container-fluid .inicio a{
+    text-align: center;
+    margin: 10px;
 }
