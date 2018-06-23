@@ -23,3 +23,7 @@ git push -u origin master
 git add .
 git commit -m "Comentario"
 git push -u origin master
+
+
+-- Para ver cambios que ha hecho los otros programadores --
+git pull origin master
