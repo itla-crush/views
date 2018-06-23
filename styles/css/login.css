@@ -1,0 +1,133 @@
+/*
+	Theme Color or Dalton's favority color:
+
+	color: rgb(247, 1, 76);
+	color: #F7014C;
+
+*/
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+
+	background-image: url('../../img/1.jpg');
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.principal {
+	width: 70vw;
+	height: 80vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+	/*border: solid 1px rgb();*/
+	border-radius: 8px;
+}
+
+.container-left {
+	float: left;
+	width: 40%;
+	height: 100%;
+	padding: 16px;
+	box-sizing: border-box; 
+	background-color: rgba(255, 255, 255, 0.2);
+
+	/* Agrega borde solo en las esquinas del lado izquierdo */
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+
+}
+
+.container-right {
+	float: right;
+	width: 60%;
+	height: 100%;
+	padding: 16px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.95);
+
+	/* Agrega borde solo en las esquinas del lado derecho */
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+}
+
+.principal .container-left h1 {
+	/*margin: 0 auto;*/
+	text-align: center;
+	color: rgb(255, 255, 255);
+    font-family: "Courgette";
+    font-size: 42px;
+}
+
+.principal .container-right .in-container-right h2 {
+	margin: 0 auto;
+    font-family: "Courgette";
+	color: rgba(247, 1, 76, 0.8);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.principal .container-right .in-container-right h2 a {
+	color: rgba(247, 1, 76, 0.8);
+    text-decoration: none;
+    text-decoration-style: unset;
+}
+
+/*.principal .container-left img {
+	width: 75px;
+	height: 75px;
+}*/
+
+.in-container-left {
+	width: 80%;
+	height: 60%;
+	margin: 0 auto;
+	
+	/* Se puede eliminar, solo es para marcar el area de vista */
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px white;
+	border-radius: 3px;
+
+	display: flex;
+  	/*justify-content: flex-start;*/
+	align-items: center;
+}
+
+.in-container-right {
+	width: 85%;
+	height: 90%;
+	margin: 0 auto;
+	
+	/* Se puede eliminar, solo es para marcar el area de vista */
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+
+}
+
+.left-icon {
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+}
+
+.principal .container-left .in-container-left li {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
