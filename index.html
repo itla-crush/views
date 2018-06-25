@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="styles/bootstrap/js/fontawesome-all.js"></script>
+    <!-- <script src="styles/bootstrap/js/fontawesome-all.js"></script> -->
+    <script type="text/javascript" src="styles/fontawesome/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/index.css">
     <link rel="shortcut icon" href="img/cupido3.png">
@@ -12,32 +14,354 @@
 </head>
 <body>
 
-
     <header>
-        <nav class="navbar navbar-default klk">
+        <nav class="navbar navbar-fixed-top navbar-default header-content">
             <div class="container">
                     <div class="lg">
                         <img src="img/cupido3.png" id="logo" class="logo" alt="">
                     </div>
                      <div class="buscar">
-                        <input type="text" class="form-control text-buscar" placeholder="Buscar">
+                        <form action="#" method="GET">
+                            <input type="text" class="form-control text-buscar" placeholder="Buscar">
+                        </form>
                      </div>
                     <!--Iconos del Menu-->
                     <div class="iconos">
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fas fa-home icono"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart icono"></i></a></li>
-                            <li><a href="#"><i class="fas fa-user icono"></i></a></li>
+                            <li><a href="#"><i class="fa fa-home icono"></i></a></li>
+                            <li><a href="#"><i class="fa fa-heart icono"></i></a></li>
+                            <li><a href="#"><i class="fa fa-user icono"></i></a></li>
                         </ul>
                     </div>
              </div>
        </nav>
     </header>
 
-    
-    
-    
 
+    <div class="container main-content"> 
+        <aside class="left-aside center-content">
+            <section>
+                <div>
+                    Left Aside <br><br>
+                    <strong>LÉEME...!!!</strong>
+                    <p><br>El border de este contenedor (ASIDE) solo es para ver el espacio que ocupa el contenedor. <br><br>
+                    En la parte de agregar comentarios hay diferentes iconos porque aun no decido cual elegir.<br><br>
+                    Hay diferentes tipos de post:<br>
+                    - Completo.<br>
+                    - Solo texto.<br>
+                    - Solo imagen.<br><br>
+                    NO HAY NADA DE RESPONSIVE EN ESTE DISEÑO.
+                    </p>
+                </div>
+            </section>
+        </aside>
+
+        <main class="main center-content">
+            <section>
+                <div>
+
+                <!-- Post -->
+                <article class="post">
+                    <header class="header-post">
+                        <div class="div-img-profile">  <!-- Contenedor de la Imagen de Perfil -->
+                            <a href="#">
+                                <img class="img-profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"> <!-- Imagen -->
+                            </a>
+                        </div>
+                        <div class="div-user"> 
+                            <a href="#">@anonimo</a> <!-- Usuario -->
+                            <p>32 min</p>
+                        </div>
+                    </header>
+                    <div class=""> <!-- Contenido Del Post -->
+                        <div class="div-text-post"><!-- Texto Del Post -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus. Curabitur a efficitur nisl, nec porta elit. Nullam a tellus quis nunc porta vulputate. Quisque suscipit, quam sed dapibus pharetra, orci tortor hendrerit lacus, sed blandit quam arcu ut tortor. Mauris nibh justo, molestie ac erat porttitor, volutpat sodales metus.</p>
+                        </div> 
+                        <div class="div-img-post"> <!-- Imagen del Post -->
+                            <img class="img-post rounded" src="https://capitol.texas.gov/images/backgrounds/capitolc_1024.jpg">
+                        </div>
+                    </div>
+                    <div class="div-footer"> <!-- Pie Del Post -->
+                        <section class="section-like-comment">
+                            <a class="" href="#"><i class="far fa-heart icon-post"></i></a>
+                            <a class="" href="#"><i class="far fa-comment icon-post"></i></a>
+                        </section>
+                        <section> <!-- Cantidad Me Gusta del Post -->
+                            <div class="div-likes">
+                                <a href="#"><span>1,234 Me gusta</span></a>
+                            </div>
+                        </section>
+                        <div class="div-comments"> <!-- Seccion de Comentarios del Post -->
+                            <ul class="list-unstyled">
+                                <li class=""> 
+                                    <a href="#">@user1</a><span>Comentario 1</span>
+                                </li>
+                                <li class="">
+                                    <a href="#">@user2</a><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-comment"> <!-- Agregar Comentario -->
+                            <hr>
+                            <form class="form-comment">
+                                <textarea class="textarea-comment" rows="1" placeholder="Escribe un comentario..."></textarea> <!-- 5 lineas max -->
+                                <!-- <button type="submit"><i class="fa fa-arrow-right icon-comment"></i></button> -->
+                                <button type="submit"><img src="styles/send.svg"></button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <!-- /Post -->
+
+
+
+                <!-- Post -->
+                <article class="post">
+                    <header class="header-post">
+                        <div class="div-img-profile">  <!-- Contenedor de la Imagen de Perfil -->
+                            <a href="#">
+                                <img class="img-profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"> <!-- Imagen -->
+                            </a>
+                        </div>
+                        <div class="div-user"> 
+                            <a href="#">@anonimo</a> <!-- Usuario -->
+                            <p>32 min</p>
+                        </div>
+                    </header>
+                    <div class=""> <!-- Contenido Del Post -->
+                        <div class="div-text-post"><!-- Texto Del Post -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus. Curabitur a efficitur nisl, nec porta elit. Nullam a tellus quis nunc porta vulputate. Quisque suscipit, quam sed dapibus pharetra, orci tortor hendrerit lacus, sed blandit quam arcu ut tortor. Mauris nibh justo, molestie ac erat porttitor, volutpat sodales metus.</p>
+                        </div> 
+                        <div class="div-img-post"> <!-- Imagen del Post -->
+                            <img class="img-post rounded" src="https://capitol.texas.gov/images/backgrounds/capitolc_1024.jpg">
+                        </div>
+                    </div>
+                    <div class="div-footer"> <!-- Pie Del Post -->
+                        <section class="section-like-comment">
+                            <a class="" href="#"><i class="far fa-heart icon-post"></i></a>
+                            <a class="" href="#"><i class="far fa-comment icon-post"></i></a>
+                        </section>
+                        <section> <!-- Cantidad Me Gusta del Post -->
+                            <div class="div-likes">
+                                <a href="#"><span>1,234 Me gusta</span></a>
+                            </div>
+                        </section>
+                        <div class="div-comments"> <!-- Seccion de Comentarios del Post -->
+                            <ul class="list-unstyled">
+                                <li class=""> 
+                                    <a href="#">@user1</a><span>Comentario 1</span>
+                                </li>
+                                <li class="">
+                                    <a href="#">@user2</a><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-comment"> <!-- Agregar Comentario -->
+                            <hr>
+                            <form class="form-comment">
+                                <textarea class="textarea-comment" rows="1" placeholder="Escribe un comentario..."></textarea> <!-- 5 lineas max -->
+                                <!-- <button type="submit"><i class="fa fa-arrow-right icon-comment"></i></button> -->
+                                <button type="submit"><img src="styles/send3.svg"></button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <!-- /Post -->
+
+
+                <!-- Post -->
+                <article class="post">
+                    <header class="header-post">
+                        <div class="div-img-profile">  <!-- Contenedor de la Imagen de Perfil -->
+                            <a href="#">
+                                <img class="img-profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"> <!-- Imagen -->
+                            </a>
+                        </div>
+                        <div class="div-user"> 
+                            <a href="#">@anonimo</a> <!-- Usuario -->
+                            <p>32 min</p>
+                        </div>
+                    </header>
+                    <div class=""> <!-- Contenido Del Post -->
+                        <div class="div-text-post"><!-- Texto Del Post -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus. Curabitur a efficitur nisl, nec porta elit. Nullam a tellus quis nunc porta vulputate. Quisque suscipit, quam sed dapibus pharetra, orci tortor hendrerit lacus, sed blandit quam arcu ut tortor. Mauris nibh justo, molestie ac erat porttitor, volutpat sodales metus.</p>
+                        </div> 
+                        <div class="div-img-post"> <!-- Imagen del Post -->
+                            <img class="img-post rounded" src="https://capitol.texas.gov/images/backgrounds/capitolc_1024.jpg">
+                        </div>
+                    </div>
+                    <div class="div-footer"> <!-- Pie Del Post -->
+                        <section class="section-like-comment">
+                            <a class="" href="#"><i class="far fa-heart icon-post"></i></a>
+                            <a class="" href="#"><i class="far fa-comment icon-post"></i></a>
+                        </section>
+                        <section> <!-- Cantidad Me Gusta del Post -->
+                            <div class="div-likes">
+                                <a href="#"><span>1,234 Me gusta</span></a>
+                            </div>
+                        </section>
+                        <div class="div-comments"> <!-- Seccion de Comentarios del Post -->
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <a href="#">@user1</a><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus.</span>
+                                </li>
+                                <li class="">
+                                    <a href="#">@user2</a><span>Comentario 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-comment"> <!-- Agregar Comentario -->
+                            <hr>
+                            <form class="form-comment">
+                                <textarea class="textarea-comment" rows="1" placeholder="Escribe un comentario..."></textarea> <!-- 5 lineas max -->
+                                <button type="submit"><img src="styles/send2.svg"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <!-- /Post -->
+
+                <!-- Post Sin Imagen -->
+                <article class="post">
+                    <header class="header-post">
+                        <div class="div-img-profile">  <!-- Contenedor de la Imagen de Perfil -->
+                            <a href="#">
+                                <img class="img-profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"> <!-- Imagen -->
+                            </a>
+                        </div>
+                        <div class="div-user"> 
+                            <a href="#">@anonimo</a> <!-- Usuario -->
+                            <p>32 min</p>
+                        </div>
+                    </header>
+                    <div class=""> <!-- Contenido Del Post -->
+                        <div class="div-text-post"><!-- Texto Del Post -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend sem a dui rutrum mattis. Nullam vitae massa ullamcorper, sollicitudin mauris quis, scelerisque purus. Curabitur a efficitur nisl, nec porta elit. Nullam a tellus quis nunc porta vulputate. Quisque suscipit, quam sed dapibus pharetra, orci tortor hendrerit lacus, sed blandit quam arcu ut tortor. Mauris nibh justo, molestie ac erat porttitor, volutpat sodales metus.</p>
+                        </div> 
+                        <!-- <div class="div-img-post"> Imagen del Post
+                            <img class="img-post rounded" src="">
+                        </div> -->
+                    </div>
+                    <div class="div-footer"> <!-- Pie Del Post -->
+                        <section class="section-like-comment">
+                            <a class="" href="#"><i class="far fa-heart icon-post"></i></a>
+                            <a class="" href="#"><i class="far fa-comment icon-post"></i></a>
+                        </section>
+                        <section> <!-- Cantidad Me Gusta del Post -->
+                            <div class="div-likes">
+                                <a href="#"><span>1,234 Me gusta</span></a>
+                            </div>
+                        </section>
+                        <div class="div-comments"> <!-- Seccion de Comentarios del Post -->
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <a href="#">@user1</a><span>Comentario 1</span>
+                                </li>
+                                <li class="">
+                                    <a href="#">@user2</a><span>Comentario 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-comment"> <!-- Agregar Comentario -->
+                            <hr>
+                            <form class="form-comment">
+                                <textarea class="textarea-comment" rows="1" placeholder="Escribe un comentario..."></textarea> <!-- 5 lineas max -->
+                                <button type="submit"><i class="far fa-paper-plane icon-comment"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <!-- /Post -->
+
+                <!-- Post Sin Texto -->
+                <article class="post">
+                    <header class="header-post">
+                        <div class="div-img-profile">  <!-- Contenedor de la Imagen de Perfil -->
+                            <a href="#">
+                                <img class="img-profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"> <!-- Imagen -->
+                            </a>
+                        </div>
+                        <div class="div-user"> 
+                            <a href="#">@anonimo</a> <!-- Usuario -->
+                            <p>32 min</p>
+                        </div>
+                    </header>
+                    <div class=""> <!-- Contenido Del Post -->
+                        <div class="div-text-post"><!-- Texto Del Post -->
+                            <p></p>
+                        </div> 
+                        <div class="div-img-post"> <!-- Imagen del Post -->
+                            <img class="img-post rounded" src="https://capitol.texas.gov/images/backgrounds/capitolc_1024.jpg">
+                        </div>
+                    </div>
+                    <div class="div-footer"> <!-- Pie Del Post -->
+                        <section class="section-like-comment">
+                            <a class="" href="#"><i class="far fa-heart icon-post"></i></a>
+                            <a class="" href="#"><i class="far fa-comment icon-post"></i></a>
+                        </section>
+                        <section> <!-- Cantidad Me Gusta del Post -->
+                            <div class="div-likes">
+                                <a href="#"><span>1,234 Me gusta</span></a>
+                            </div>
+                        </section>
+                        <div class="div-comments"> <!-- Seccion de Comentarios del Post -->
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <a href="#">@user1</a><span>Comentario 1</span>
+                                </li>
+                                <li class="">
+                                    <a href="#">@user2</a><span>Comentario 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-form-comment"> <!-- Agregar Comentario -->
+                            <hr>
+                            <form class="form-comment">
+                                <textarea class="textarea-comment" rows="1" placeholder="Escribe un comentario..."></textarea> <!-- 5 lineas max -->
+                                <button type="submit"><i class="fa fa-arrow-right icon-comment"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <!-- /Post -->
+
+
+
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-aside center-content">
+            <section>
+                <div class="">
+                    <p>El border de este contenedor (ASIDE) solo es para ver el espacio que ocupa el contenedor</p>
+                    
+                <!-- Chat Users -->
+                <div class="chatOrderedList">
+                    <div class="chat-sidebar">
+                        <ul class="list-unstyled">
+
+                            <li class=""> <!-- Each User Chat -->
+                                <a class="" href="#">
+                                    <div class="">
+                                        <div class="">
+                                            <img src=""> <!-- Perfil de Usuario -->
+                                        </div>
+                                        <div class="">@guest</div>
+                                        <div class="">32 min</div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Chat Users -->
+
+                </div> 
+            </section>
+        </aside>
+    </div>
 
 
 </body>
