@@ -1,3 +1,11 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -113,22 +121,24 @@
 .container .left-aside {
     width: 25vw;
     height: 100%; 
-    /*background-color: rgba(0, 0, 0, 1);*/
-    /*border: solid 1px rgba(0, 0, 0, 0.5);*/
+    /*position: static;*/
+    /*background-color: rgba(0, 0, 0, 1);
+    border: solid 1px rgba(0, 0, 0, 0.5);*/
 }
 
 .container .main {
     width: 50vw;
     height: 100%;
-    /*background-color: rgba(155, 155, 155, 1);*/
-    /*border: solid 1px rgba(0, 0, 0, 0.5);*/
+    /*background-color: rgba(155, 155, 155, 1);
+    border: solid 1px rgba(0, 0, 0, 0.5);*/
 }
 
 .container .right-aside {
     width: 25vw;
     height: 100%;
-    /*background-color: rgba(0, 0, 0, 1);*/
-    /*border: solid 1px rgba(0, 0, 0, 0.5);*/
+    /*position: static;*/
+    /*background-color: rgba(0, 0, 0, 1);
+    border: solid 1px rgba(0, 0, 0, 0.5);*/
 }
 
 .center-content {
@@ -142,11 +152,54 @@
 
 /*-------------------- POST ------------------------------------------------------------------------*/
 
+.post {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.img-profile {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
 .img-post {
     width: 100%; 
     min-height: 350px; 
     max-height: 500px;
+}
 
+/*.div-comment {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-comment {
+    margin: 0px;
+    padding: 0px;
+}*/
+
+.textarea-comment {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-style: none;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+
+    border-color: Transparent;
+    overflow: auto;
+    outline: none;
+}
+
+.textarea-comment:focus {
+    border-style: none;
 }
 
 /*-------------------- /POST ------------------------------------------------------------------------*/
