@@ -3,6 +3,8 @@
 
 	color: rgb(247, 1, 76);
 	color: #F7014C;
+	left-in
+	container-left
 
 */
 
@@ -14,19 +16,29 @@ body {
   	justify-content: center;
 	align-items: center;
 	font-family: "Ubuntu";
-	background-image: url('../../img/1.jpg');
+	background-image: url('../../img/girl.jpg');
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .principal {
-	width: 70vw;
+	width: 70%;
 	height: 80vh;
 	background-color: rgba(0, 0, 0, 0.4);
 	margin: 0 auto;
 	/*border: solid 1px rgb();*/
 	border-radius: 8px;
+	min-width:1000px ;
+}
+/* .principal .container-left .titulo{
+	margin-bottom: 69px;
+} */
+
+.principal .container-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .container-left {
@@ -35,7 +47,7 @@ body {
 	height: 100%;
 	padding: 16px;
 	box-sizing: border-box; 
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 255, 255, 0.2);
 
 	/* Agrega borde solo en las esquinas del lado izquierdo */
 	-webkit-border-top-left-radius: 8px;
@@ -45,6 +57,7 @@ body {
 	-moz-border-radius-bottomleft: 8px;
 
 }
+
 
 .container-right {
 	float: right;
@@ -70,10 +83,37 @@ body {
 	/*margin: 0 auto;*/
 	text-align: center;
 	color: rgb(255, 255, 255);
-	font-family: "Abel";
+	font-family: "Istok Web";
 	font-weight: 400;
     font-size: 42px;
 }
+/* 
+.container-left .in-container-left .left-in .mensajes-padre{
+	
+} */
+
+
+
+
+.container-left .in-container-left .left-in .mensajes{
+
+	margin-bottom: 60px;
+	
+}
+
+
+.container-left .in-container-left .left-in .mensajes h5{
+	color: #FFFAFB;
+}
+
+.container-left .in-container-left .left-in .mensajes h5{
+	font-size: 24px;
+}
+
+/* .container-left .in-container-left .left-in{
+	display: flex;
+	justify-content: space-between;
+} */
 
 
 .principal .container-right .in-container-right h2 {
@@ -99,17 +139,17 @@ body {
 
 .in-container-left {
 	width: 80%;
-	height: 60%;
+	/* height: 60%; */
 	margin: 0 auto;
 	
 	/* Se puede eliminar, solo es para marcar el area de vista */
-	background-color: rgba(0, 0, 0, 0);
-	border: solid 1px white;
+	/* background-color: rgba(0, 0, 0, 0 .5); */
+	/* border: solid 1px white; */
 	border-radius: 3px;
 
-	display: flex;
+	 display: flex; 
   	/*justify-content: flex-start;*/
-	align-items: center;
+	align-items: center; 
 }
 
 .in-container-right {
@@ -167,14 +207,9 @@ body {
 	width: 50%;
 	border-radius: 20px;
 }
-.in-container-right .boton .bt2{
-	background: #A9E5BB;
+.in-container-right .boton .btn2:hover{
+	color: #fff;
 }
-.in-container-right .boton .bt2:hover{
-	background: #F7FFDD;
-	color: #A9E5BB;
-}
-
 
 .left-icon {
 	font-size: 25px;
