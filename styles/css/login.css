@@ -6,6 +6,8 @@
 	left-in
 	container-left
 
+	XDD Qloq
+
 */
 
 body {
@@ -23,26 +25,28 @@ body {
 }
 
 .principal {
+	display: flex;
 	width: 70%;
 	height: 80vh;
 	background-color: rgba(0, 0, 0, 0.4);
 	margin: 0 auto;
 	/*border: solid 1px rgb();*/
 	border-radius: 8px;
-	min-width:1000px ;
 }
 /* .principal .container-left .titulo{
 	margin-bottom: 69px;
 } */
 
-.principal .container-left{
+/* .principal .container-left{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} */
 
 .container-left {
-	float: left;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
 	width: 40%;
 	height: 100%;
 	padding: 16px;
@@ -60,7 +64,7 @@ body {
 
 
 .container-right {
-	float: right;
+	/* float: right; */
 	width: 60%;
 	height: 100%;
 	padding: 15px;
@@ -87,17 +91,12 @@ body {
 	font-weight: 400;
     font-size: 42px;
 }
-/* 
-.container-left .in-container-left .left-in .mensajes-padre{
-	
-} */
-
-
 
 
 .container-left .in-container-left .left-in .mensajes{
 
-	margin-bottom: 60px;
+	margin-bottom: 45px;
+	margin-top: 40px;
 	
 }
 
@@ -108,7 +107,7 @@ body {
 
 .container-left .in-container-left .left-in .mensajes h5{
 	font-size: 24px;
-}
+} 
 
 /* .container-left .in-container-left .left-in{
 	display: flex;
@@ -131,6 +130,8 @@ body {
     text-decoration: none;
     text-decoration-style: unset;
 }
+
+
 
 /*.principal .container-left img {
 	width: 75px;
@@ -203,7 +204,7 @@ body {
 
 .in-container-right .boton .btn{
 	font-family: "AbeeZee";
-	font-size: 16px;
+	font-size: 14px;
 	width: 50%;
 	border-radius: 20px;
 }
@@ -228,4 +229,86 @@ body {
 	font-size: 12px;
 	color: rgb(255, 255, 255);
 	text-align: center;
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.container-left .in-container-left .left-in .mensajes{
+
+		margin-bottom: 30px;
+		margin-top: 25px;
+		
+	}
+
+	.container-left .in-container-left .left-in .mensajes h5{
+		font-size: 18px;
+	} 
+
+
+
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+	.principal {
+		
+		width: 80%;
+		
+	}
+
+	.principal .container-left h1 {
+		/*margin: 0 auto;*/
+		text-align: center;
+		color: rgb(255, 255, 255);
+		font-family: "Istok Web";
+		font-weight: 400;
+		font-size: 38px;
+	}
+
+	.container-left .in-container-left .left-in .mensajes{
+
+		margin-bottom: 35px;
+		margin-top: 30px;
+		
+	}
+
+	.container-left .in-container-left .left-in .mensajes h5{
+		font-size: 20px;
+	} 
+
+}
+
+
+@media screen and (max-width: 850px){
+
+	.container-left .in-container-left .left-in .mensajes{
+
+		margin-bottom: 25px;
+		margin-top: 25px;
+		
+	}
+
+	.container-left .in-container-left .left-in .mensajes h5{
+		font-size: 17px;
+	} 
+
+}
+
+@media screen and (max-width: 730px){
+
+	.container-left{
+		visibility: hidden;
+	}
+
+	/* .container-right{
+		width: 100vw;
+	} */
+
+	.in-container-right{
+		width: 100%;
+	}
+
 }

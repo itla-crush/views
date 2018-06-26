@@ -14,8 +14,8 @@ body {
 
 .principal{
     display: flex;
-    width: 70%;
-    min-width: 1000px;
+	width: 70%;
+    /* min-width: 1000px; */
     height: 80%;
     background: #DAEFB3;
 }
@@ -45,7 +45,8 @@ body {
 }
 
 .principal .contenedor-derecho{
-    width: 60%;
+	width: 60%;
+	height: 100%;
     padding: 15px;
 }
 
