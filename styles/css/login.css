@@ -17,7 +17,7 @@ body {
   	/* justify-content: center; */
 	align-items: center;
 	font-family: "Ubuntu";
-	background-image: url('../../img/girl.jpg');
+	background-image: url('../../img/sun2.jpg');
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -308,7 +308,13 @@ body {
 		border-radius: 0px;
 	}
 	body{
-		background-color: rgba(255, 255, 255, 0.95);
+		background-image: none;
+	}
+	.container-right {
+		background: #ECE9E6;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		
 	}
 	.in-container-right .boton .btn-iniciar-sesion{
 		min-width: 150px;
