@@ -23,6 +23,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
 .Landing {
 	display: flex;
 	flex-direction: row;
