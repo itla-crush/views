@@ -140,6 +140,22 @@ body {
     /*float: left;*/
 } 
 
+.fixed-top-left {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+} 
+
+.fixed-top-right {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    /*left: 0;*/
+    z-index: 1030;
+}
+
 .div-left .div-content,
 .div-right .div-content {
     width: 90%;
