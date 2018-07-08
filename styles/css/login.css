@@ -18,7 +18,7 @@ body {
   	/* justify-content: center; */
 	align-items: center;
 	font-family: "Ubuntu";
-	background-image: url('../../img/sun2.jpg');
+	background-image: url('../../img/girl.jpg');
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -171,7 +171,7 @@ body {
 	margin-bottom:8px; 
 	/* margin:auto; */	
 }
-/* -----ESTILOS BOTONOES ----- */
+/* -----ESTILOS BOTONES ----- */
 .in-container-right .boton .btn-iniciar-sesion{
 	font-family: "AbeeZee";
 	font-size: 16px;
