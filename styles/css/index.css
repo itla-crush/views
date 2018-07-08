@@ -68,9 +68,9 @@ body {
 
 @media screen and (max-width: 600px) {
     .container {
-      height: 80px;
-     padding-top: 10px;
-       /* background-size: 100vw; */
+        height: 80px;
+        padding-top: 10px;
+        /* background-size: 100vw; */
     }
     .nav-content .search .text-search {
         margin: 15px 10px 0;
