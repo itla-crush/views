@@ -11,7 +11,10 @@
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="styles/bootstrap/js/fontawesome-all.js"></script>
     <!-- <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css"> -->
+<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="styles/bootstrap_4/css/bootstrap.min.css"> -->
+=======
+>>>>>>> f303eaf3e628556ede421e9736505dd148866710
 	<link rel="stylesheet" type="text/css" href="styles/css/login.css">
 
 	<!-- Fuentes -->
@@ -21,6 +24,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+
+	<style>
+	.abcde {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	</style>
 </head>
 <body>
 
@@ -43,17 +53,13 @@
 						<div class="mensajes">
 								<h5><i class="far fa-heart"></i> Declara lo que sientes</h5>
 						</div>
-						
 						<div class="mensajes">
 								<h5><i class="far fa-comment-dots"></i> Lee declaraciones privadas</h5>
 						</div>
-
 						<div class="mensajes">
 								<h5><i class="fas fa-eye"></i> Declarate publico o anonimo</h5>
 						</div>
-
            			</div>
-           			
            	    <!-- </div>	 -->
 			</div>
 		</div>
@@ -95,10 +101,23 @@
 							
 							    <input placeholder="Nombre de usuario" id="icon_prefix" type="text" class="validate">
 								<input placeholder="Correo" id="icon_prefix" type="email" class="validate">
-								<input placeholder="Contraseña" id="icon_prefix" type="password" class="validate">
+							<div class="input-r">	
+								<input class="dn" placeholder="Contraseña" id="icon_prefix" type="password" class="validate">
 								<input placeholder="Confirma Contraseña" id="icon_prefix" type="password" class="validate">
+							</div>
+							<div class="datecalendario">
+								<input type="text" class="datepicker fech-calendario" placeholder="Fecha de nacimiento"/>
+							</div>	
 							
-								<div class="boton">
+							<div class="col s12 m6">
+								<select class="browser-default abcde">
+								  <option value="" disabled selected>Sexo</option>
+								  <option value="1">Hombre</option>
+								  <option value="2">Mujer</option>
+								</select>
+							  </div>
+
+								<!-- <div class="boton">
 									 <input type="submit" value="REGISTRATE" class="btn-registro">
 								</div> 
 								<div class="boton">
@@ -106,20 +125,95 @@
 								</div>
 						</form>
 
-						<!-- Para iniciar sesionn -->
+						<!-- Para iniciar sesionn 
 
 						<!-- <div class="olvidar">
 							<div class="olvidar-2">
 								<a href="#">¿Olvidaste tu contraseña?</a>
 							</div>
+<<<<<<< HEAD
 						</div> -->
+=======
+						</div>-->
+>>>>>>> f303eaf3e628556ede421e9736505dd148866710
 			</div>
 		</div>
 	</div>
 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+</script>
+
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+  
+		document.body.style.backgroundImage = "url(img/sun.jpg)";
+
+		const Calender = document.querySelector('.datepicker');
+		M.Datepicker.init(Calender,{
+			format:'dd/mmm/yyyy',
+			i18n:{
+				clear:'Limpiar',
+				cancel:'Cancelar',
+				done:'Aceptar',
+				months:[
+					'Enero',
+					'Febrero',
+					'Marzo',
+					'Abril',
+					'Mayo',
+					'Junio',
+					'Julio',
+					'Agosto',
+					'Septiembre',
+					'Octubre',
+					'Noviembre',
+					'Diciembre'
+					],
+				monthsShort:[
+							'Ene',
+							'Feb',
+							'Mar',
+							'Abr',
+							'May',
+							'Jun',
+							'Jul',
+							'Agost',
+							'Sept',
+							'Oct',
+							'Nov',
+							'Dic'
+							],
+			    weekdays:[
+						'Domingo',
+						'Lunes',
+						'Martes',
+						'Miercoles',
+						'Jueves',
+						'Viernes',
+						'Sabado'
+						],
+				weekdaysShort:[
+					'Lun',
+					'Mart',
+					'Mierc',
+					'Jue',
+					'Vie',
+					'Sab',
+					'Dom'	
+					]
+			}
+		})
+	</script>
+	
+
+
 </body>
 </html>	
 
-<!-- <button type="submit" class="btn btn-info">Regístrate</button>  -->
+<!-- <button type="submit" class="btn btn-info">Regístrate</button>  
 
-<!-- <button type="submit" class="btn btn2">Invitado</button> -->
+ <button type="submit" class="btn btn2">Invitado</button> -->

@@ -14,7 +14,10 @@ body {
     overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.015);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f303eaf3e628556ede421e9736505dd148866710
 header .navbar{
     padding: 0px;
     position: fixed;
@@ -108,6 +111,23 @@ header .nav-content .iconos .navbar-nav li a{
         margin-bottom: 7px;
     }
 
+<<<<<<< HEAD
+=======
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*html {
+    margin: 0;
+    -webkit-margin: 0;
+}*/
+
+.nav-content {
+    /*width: 100vw;*/
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    min-width: 540px;
+    min-height: 65px;
+    background-color: rgba(255, 255, 255, 1);
+>>>>>>> f303eaf3e628556ede421e9736505dd148866710
 }
 /**/
 /*.container div {
@@ -195,7 +215,84 @@ header .nav-content .iconos .navbar-nav li a{
     justify-content: center;
     align-items: center;
 }
+/* .destinatario-p{
+    display: flex;
+    justify-content: center;
+} */
+.publicacion-amor  {
+    border-radius: 25px;
+    /* background-color: rgba(255, 0, 43, 0.103); */
+}
 
+.publicacion-amor .card-body{
+    text-align: center;
+    margin-bottom: 0px;
+    font-family:"AbeeZee";
+    font-size: 20px;
+}
+.publicacion-amor .destinatario{
+    display: flex;
+    align-items: center;
+
+}
+.publicacion-amor .destinatario input[type="text"]{
+    height: 33px;
+    width: 100%;
+}
+.publicacion-amor .destinatario .tema{
+    width: 20%;
+    font-size: 18px;
+    font-family:"AbeeZee";
+     text-align: center;
+}
+.publicacion-amor .destinatario .destino{
+    width: 70%;
+}
+.publicacion-amor .seleccion{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family:"AbeeZee";
+    padding-bottom: 15px;
+    padding-top: 15px;
+     /* background-color: rgba(255, 0, 43, 0.103); */
+}
+.publicacion-amor .seleccion .tema{
+     text-align: center;
+    
+}
+.publicacion-amor .seleccion .input-group .form-check input[type="radio"]{
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.publicacion-amor .form-group{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.publicacion-amor .form-group .text{
+  min-height: 70px;
+  max-height: 120px;
+}
+.publicacion-amor .form-group a {
+    text-decoration: none;
+}
+.publicacion-amor .publicar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+.publicacion-amor .publicar .btn{
+    font-family:"AbeeZee";
+    background: #2BBBAD;
+    border: none;
+}
+.publicacion-amor .publicar .btn:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255);
+}
+.publicacion-amor .publicar .btn:hover{
+    color: #fff;
+	background-color: #18ab9d;
+}
 
 /*-------------------- POST ------ vl------------------ post------------------------------------------------*/
 
