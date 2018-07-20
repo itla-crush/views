@@ -14,64 +14,70 @@ body {
     overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.015);
 }
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    border:solid 1px #000;
-   /* background-size: 100vw; vl*/
+header .navbar{
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
-
+header .nav-content .iconos .navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+header .nav-content .iconos .navbar-nav li a{
+    padding: 15px;
+}
+.nav-content .iconos .icono{
+    color: #777777;
+}
 .nav-content .search .text-search {
-    margin: 15px 10px 0;
+    margin: 0px 10px 0;
     min-width: 200px;
     text-align: center;
 }
-
 .search .text-search:focus {
     text-align: justify;
 }
-
 .nav-content .lg,
 .nav-content .search,
 .nav-content .iconos {
     margin-left: 15px;
     margin-right: 15px;
 }
-
 .nav-content .lg .logo {
     width: 38px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
 .nav-content .iconos .icono {
     font-size: 28px;
 }
-
-/* .nav-content .iconos .icono:hover {
+.nav-content .iconos .icono:hover {
     color: #f7014c;
-} */
-
+}
 #logo:hover {
     cursor: pointer;
 }
-
-@media screen and (max-width: 780px) {
-    header .nav-content .iconos .navbar-nav {
-        display: flex;
-        flex-direction: row;
+.nav-content {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    min-height: 65px;
+    background-color: rgba(255, 255, 255, 1);
+}
+/* ----- AQUI RESPONSIVE DEL MENU --------- */
+@media screen and (min-width: 576px){
+    header .navbar .container {
+        max-width: 1000px;
     }
 }
-
 @media screen and (max-width: 600px) {
     .container {
       height: 80px;
-     padding-top: 10px;
-       /* background-size: 100vw; */
+      padding-top: 10px;
     }
     .nav-content .search .text-search {
-        margin: 15px 10px 0;
+        margin: 0px 10px 0;
         min-width: 200px;
         height: 40px;
     }
@@ -82,7 +88,26 @@ body {
         margin-right: 10px;
     }
 }
+@media screen and (max-width: 522px) {
+    .container {
+         height: auto;
+    }
+    .navbar .container .lg{
+        display: none;
+    }
+    .navbar .container .search{
+        width: 80%;
+        order: 1;
+        margin-bottom: 7px;
+    }
+    .nav-content .search .text-search{
+        margin: 0px;
+    }
+    .navbar .container .iconos{
+        margin-bottom: 7px;
+    }
 
+}
 /*---------------------------------------------------------------------------------------------------*/
 
 /*html {
@@ -179,7 +204,84 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* .destinatario-p{
+    display: flex;
+    justify-content: center;
+} */
+.publicacion-amor  {
+    border-radius: 25px;
+    /* background-color: rgba(255, 0, 43, 0.103); */
+}
 
+.publicacion-amor .card-body{
+    text-align: center;
+    margin-bottom: 0px;
+    font-family:"AbeeZee";
+    font-size: 20px;
+}
+.publicacion-amor .destinatario{
+    display: flex;
+    align-items: center;
+
+}
+.publicacion-amor .destinatario input[type="text"]{
+    height: 33px;
+    width: 100%;
+}
+.publicacion-amor .destinatario .tema{
+    width: 20%;
+    font-size: 18px;
+    font-family:"AbeeZee";
+     text-align: center;
+}
+.publicacion-amor .destinatario .destino{
+    width: 70%;
+}
+.publicacion-amor .seleccion{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family:"AbeeZee";
+    padding-bottom: 15px;
+    padding-top: 15px;
+     /* background-color: rgba(255, 0, 43, 0.103); */
+}
+.publicacion-amor .seleccion .tema{
+     text-align: center;
+    
+}
+.publicacion-amor .seleccion .input-group .form-check input[type="radio"]{
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.publicacion-amor .form-group{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.publicacion-amor .form-group .text{
+  min-height: 70px;
+  max-height: 120px;
+}
+.publicacion-amor .form-group a {
+    text-decoration: none;
+}
+.publicacion-amor .publicar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+.publicacion-amor .publicar .btn{
+    font-family:"AbeeZee";
+    background: #2BBBAD;
+    border: none;
+}
+.publicacion-amor .publicar .btn:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255);
+}
+.publicacion-amor .publicar .btn:hover{
+    color: #fff;
+	background-color: #18ab9d;
+}
 
 /*-------------------- POST ------ vl------------------ post------------------------------------------------*/
 
