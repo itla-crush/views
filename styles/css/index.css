@@ -110,6 +110,8 @@ body {
 .container .main {
     width: 50vw;
     height: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
     /*background-color: rgba(155, 155, 155, 1);*/
     /*border: solid 1px rgba(0, 0, 0, 0.5);*/
 }
@@ -122,8 +124,8 @@ body {
 }
 
 .container section div {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
 }
@@ -154,16 +156,13 @@ body {
 
 .left-aside {
     float: left;
+    left: 16px;
 } 
 
 .right-aside {
     float: right;
     right: 16px;
 }
-
-.left-aside {
-    float: left;
-} 
 
 .left-aside section,
 .right-aside section {
